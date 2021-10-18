@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val snoozePendingIntent: PendingIntent =
             PendingIntent.getBroadcast(this, 0, snoozeIntent, 0)
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_baseline_alarm_off_24)
             .setContentTitle("My notification")
             .setContentText("Hello World!")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
 
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_baseline_alarm_off_24)
             .setContentTitle("My notification")
             .setContentText("Hello World!")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun basicNotification() {
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_baseline_alarm_off_24)
             .setContentTitle("Test notification")
             .setContentText("Test Notification body")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
